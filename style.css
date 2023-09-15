@@ -251,7 +251,7 @@ footer {
     display: inline-flex;
     align-self: center;
     justify-self: center;
-    transform: scale(1.5);
+    transform: scale(1.4);
 }
 
 .social-icon:hover {
