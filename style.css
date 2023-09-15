@@ -216,15 +216,8 @@ body {
         font-weight: 500;
         color: var(--desaturated-blue);
     }
-    
 
-
-
-
-
-
-
-
+/*FOOTER*/
 
 footer {
     width: 100%;           
@@ -237,6 +230,8 @@ footer {
     display: inline-flex;
     justify-self: center;        
 }
+
+/* FOOTER Social Links */
 
 .social-links {
     margin-bottom: 64px;
