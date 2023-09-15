@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'red-hat';
+    src: url('fonts/RedHatDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-light-blue: hsl(245, 75%, 52%); /* Button colors */
+    --desaturated-blue: hsl(224, 23%, 55%); /* Paragraph text color */
+    --dark-blue: hsl(223, 47%, 23%); /* Order Summary text color*/
+    --pale-blue: hsl(225, 100%, 94%); /* Main background color */
+    --very-pale-blue: hsl(225, 100%, 98%); /*Change order background */
+    --hover-blue: hsl(245, 83%, 68%);
+}
+
+body p{
+    color: var(--primary-dark-blue);
+}
+
+body {
+    font-family: 'red-hat', sans-serif;
+    display: grid;
+    justify-content: center;
+}
+
+
+.button {
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 32px;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+
+}
+
+.primary-button {
+    background-color: var(--primary-light-blue);
+    color: var(--very-pale-blue);
+    transition: ease 0.3s;
+    box-shadow: 0px 4px 32px hsla(245, 83%, 68%, 0.4);
+}
+
+.primary-button:hover {
+    text-decoration: none;
+    background-color: var(--hover-blue);
+}
+
+.secondary-button {
+    background: transparent;
+    text-decoration: none;
+    color: var(--desaturated-blue);    
+    margin-top: 8px;
+    transition: ease 0.3s;
+}
+
+.secondary-button:hover {
+    color: var(--primary-dark-blue);
+    text-decoration: none;
+}
+
+.text-link {
+    color: var(--primary-light-blue);
+    font-weight: 700;
+    transition: ease 0.3s;
+    font-size: 14px;
+}
+
+.text-link:hover {
+    text-decoration: none;
+    color: var(--hover-blue);
+}
+
+.order-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 18px 16px;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.plan-order .label{
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+.plan-order .price {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+
+
+/* Main Header Mobile */
+
+@media screen and (max-width: 830px) {
+    body {
+        padding: 80px 24px;
+        background-image: url('images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: var(--pale-blue);
+    }
+
+   
+    .card-container {
+        display: inline-block;
+        text-align: center;        
+        background-color: white;
+        box-shadow: 0px 20px 62px hsla(245, 83%, 68%, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 450px;
+    }
+
+    .hero-image-container {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        align-items: center;        
+        max-width: 100%;        
+    }
+
+    .hero-image-container img{
+        width: 100%;
+        transition: ease 0.3s;
+    }
+
+    .hero-image-container img:hover {
+        transform: scale(1.05);
+    }
+
+    .body-copy {
+        padding: 32px 22px;
+    }
+
+    .body-text h1 {
+        font-size: 24px;
+        line-height: 28px;
+        color: var(--dark-blue);
+        font-weight: 900;
+        letter-spacing: -0.5px;
+        margin-bottom: 16px;
+    }
+
+    .body-text p {
+        color: var(--desaturated-blue);
+        font-weight: 500;
+        line-height: 26px;
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+
+
+
+footer {
+    width: 100%;           
+    display: grid; 
+    margin-top: 64px;   
+    justify-content: center; 
+}
+
+.attribution {
+    display: inline-flex;
+    justify-self: center;        
+}
+
+.social-links {
+    margin-bottom: 64px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.social-icon {    
+    color: var(--desaturated-blue);    
+    border-radius: 24px;
+    transition: ease 0.3s;
+    margin-left: 2px;        
+    display: inline-flex;
+    padding: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.social-icon:hover {
+    color: var(--primary-light-blue);
+    border: 1px solid var(--primary-light-blue);
+    
+}
+
+footer a {
+    color:  var(--desaturated-blue);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.attribution .div-line {
+    padding: 0px 8px;
+}
+

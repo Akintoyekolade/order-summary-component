@@ -3,30 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <title>Frontend Mentor | Order summary card</title>
 
 </head>
 <body>
 
-  Order Summary
+  <main>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+    <div class="card-container">
+      <figure class="hero-image-container">
+        <img src="images/illustration-hero.svg" alt="illustration of a person listen to a song with wired earphones">
+      </figure>
 
-  Annual Plan
-  $59.99/year
 
-  Change
+      <div class="body-copy">      
+        <div class="body-text">
+          <h1>Order Summary</h1>
+          <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+            device anywhere you like!</p>
+        </div>
 
-  Proceed to Payment
-  Cancel Order
+        <div class="order-detail">
+          <figure class="order-icon">
+            <img src="images/icon-music.svg" alt="an icon representing music">
+          </figure>
+
+          <div class="plan-order">
+            <p class="label">Annual Plan</p>
+            <p class="price">$59.99/year</p>
+          </div>
+
+          <a href="#" class="text-link">Change</a>
+        </div>
+
+      
+
+        <a class="button primary-button" href="#">Proceed to Payment</a>
+        <a class="button secondary-button" href="#">Cancel Order</a>
+      </div>
+    </div>
+  </main>
+
+
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>
+    <span class="div-line">|</span> 
+    <p>Coded by <a href="https://www.frontendmentor.io/profile/Akintoyekolade">Akintoye Kolade Israel</a>.</p>
+  </footer>
+
+
+  <nav class="social-links">
+    
+      <a href="https://twitter.com/akintoyekolade" class="social-icon">
+        <iconify-icon icon="formkit:twitter"></iconify-icon></a>
+
+      <a href="https://linkedin.com/in/akintoyekolade" class="social-icon">
+        <iconify-icon icon="entypo-social:linkedin-with-circle"></iconify-icon></a>
+
+      <a href="https://instagram.com/official_kaystringz" class="social-icon">
+        <iconify-icon icon="uil:instagram"></iconify-icon></a>
+
+      <a href="https://www.behance.net/akintoyekolade" class="social-icon">
+        <iconify-icon icon="ant-design:behance-circle-filled"></iconify-icon></a>  
+      
+      <a href="https://github.com/Akintoyekolade/" class="social-icon">
+        <iconify-icon icon="fa-brands:github"></iconify-icon></a>
+      
+  </nav>
 </body>
 </html>
